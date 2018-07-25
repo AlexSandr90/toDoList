@@ -6,26 +6,36 @@ let write           = document.getElementById('write');
 let print           = document.getElementById('print');
 let out             = document.getElementById('output');
 
+let writeCount = parseInt(write.value);
 
 
 let base = {};
 
-write.addEventListener('click', function () {
+write.addEventListener('click', getWrite);
+
+print.addEventListener('click', getPrint);
+
+
+function getWrite() {
+
     base.first = plans.value;
+    
+    // if (writeCount === '1') {
+    //     base.first = plans.value;
+    // }
+    // if (writeCount === '2') {
+    //     base.second = plans.value;
+    // }
     plans.value = ' ';
     console.log(base);
-});
+}
 
-print.addEventListener('click', function () {
-    out.innerHTML = base.value;
+function getPrint() {
+    out.innerHTML = Object.values(base);
     plans.value = ' ';
+    console.log(base);
 
     out.classList.toggle('output');
-    // if (plans.value == '') {
-    //     out.classList.remove('output');
-    // }
-    //     out.classList.add('output');
-});
-
+}
 
 

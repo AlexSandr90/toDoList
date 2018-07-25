@@ -69,7 +69,7 @@ select {
 .output {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 1rem;
