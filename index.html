@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <form  id="form">
+        <p class="choise-date">Выберите дату:</p>
+
+        <span>Year:</span>
+        <select name="years" id="years">
+            <option value="2018" class="year1">2018</option>
+            <option value="2019" class="year2">2019</option>
+            <option value="2020" class="year3">2020</option>
+            <option value="2021" class="year4">2021</option>
+            <option value="2022" class="year5">2022</option>
+            <option value="2023" class="year6">2023</option>
+            <option value="2024" class="year7">2024</option>
+            <option value="2025" class="year8">2025</option>
+            <option value="2026" class="year9">2026</option>
+            <option value="2027" class="year10">2027</option>
+        </select>
+
+        <span>Month:</span>
+        <select name="months" id="months">
+            <option value="1" class="month1">1</option>
+            <option value="2" class="month2">2</option>
+            <option value="3" class="month3">3</option>
+            <option value="4" class="month4">4</option>
+            <option value="5" class="month5">5</option>
+            <option value="6" class="month6">6</option>
+            <option value="7" class="month7">7</option>
+            <option value="8" class="month8">8</option>
+            <option value="9" class="month9">9</option>
+            <option value="10" class="month10">10</option>
+            <option value="11" class="month11">11</option>
+            <option value="12" class="month12">12</option>
+        </select>
+
+        <span>Day:</span>
+        <select name="days" id="days">
+            <option value="1" class="day1">1</option>
+            <option value="2" class="day2">2</option>
+            <option value="3" class="day3">3</option>
+            <option value="4" class="day4">4</option>
+            <option value="5" class="day5">5</option>
+            <option value="6" class="day6">6</option>
+            <option value="7" class="day7">7</option>
+            <option value="8" class="day8">8</option>
+            <option value="9" class="day9">9</option>
+            <option value="10" class="day10">10</option>
+            <option value="11" class="day11">11</option>
+            <option value="12" class="day12">12</option>
+            <option value="13" class="day13">13</option>
+            <option value="14" class="day14">14</option>
+            <option value="15" class="day15">15</option>
+            <option value="16" class="day16">16</option>
+            <option value="17" class="day17">17</option>
+            <option value="18" class="day18">18</option>
+            <option value="19" class="day19">19</option>
+            <option value="20" class="day20">20</option>
+            <option value="21" class="day21">21</option>
+            <option value="22" class="day22">22</option>
+            <option value="23" class="day23">23</option>
+            <option value="24" class="day24">24</option>
+            <option value="25" class="day25">25</option>
+            <option value="26" class="day26">26</option>
+            <option value="27" class="day27">27</option>
+            <option value="28" class="day28">28</option>
+            <option value="29" class="day29">29</option>
+            <option value="30" class="day30">30</option>
+            <option value="31" class="day31">31</option>
+        </select>
+
+        <p class="textarea">
+            <label for="plans">Планы на день:</label>
+
+            <textarea name="my plans" id="plans" cols="30" rows="10" placeholder="My plans"></textarea>
+        </p>
+        <p class="buttons">
+            <input type="button" value="Записать" id="write" class="write">
+            <input type="button" value="Вывести на экран" id="print" class="print">
+        </p>
+
+
+    </form>
+
+
+    <div id="output"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

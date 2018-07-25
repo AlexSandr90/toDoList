@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+:root {
+    --flex: flex;
+    --Eczar: 'Eczar', serif;
+}
+
+#form {
+    display: var(--flex);
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #1286c4;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #c41522;
+    font-family: var(--Eczar);
+}
+
+.choise-date {
+    display: block;
+    width: 100%;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+span {
+    font-weight: 500;
+    margin-right: 10px;
+}
+select {
+    margin-right: .5rem;
+}
+.textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.textarea label {
+    display: block;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.textarea textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+.buttons {
+    display: var(--flex);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.output {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    box-shadow: 0 0 10px #000000;
+    color: #2918a8;
+}
+
+#output {
+
+}
