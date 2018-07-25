@@ -13,10 +13,11 @@ let base = {};
 write.addEventListener('click', function () {
     base.first = plans.value;
     plans.value = ' ';
+    console.log(base);
 });
 
 print.addEventListener('click', function () {
-    out.innerHTML = base.first;
+    out.innerHTML = base.value;
     plans.value = ' ';
 
     out.classList.toggle('output');
